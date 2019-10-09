@@ -6,9 +6,9 @@ const PORT : number = parseInt(process.argv[2]);
 const dataSourceType = process.argv[3]; // category | timeseries
 
 const functions = [
-    x => Math.abs(Math.log(x)),
-    x => Math.abs(Math.sin(x)),
-    x => Math.abs(Math.sqrt(x))
+    x => Math.cos(x) + Math.sin(x),
+    x => Math.sin(x),
+    x => Math.cos(x)
 ];
 const labels = ["Temperature", "Velocity", "Cycles", "Space"];
 let counter = 0;

@@ -5,9 +5,9 @@ var cors = require("cors");
 var PORT = parseInt(process.argv[2]);
 var dataSourceType = process.argv[3]; // category | timeseries
 var functions = [
-    function (x) { return Math.abs(Math.log(x)); },
-    function (x) { return Math.abs(Math.sin(x)); },
-    function (x) { return Math.abs(Math.sqrt(x)); }
+    function (x) { return Math.cos(x) + Math.sin(x); },
+    function (x) { return Math.sin(x); },
+    function (x) { return Math.cos(x); }
 ];
 var labels = ["Temperature", "Velocity", "Cycles", "Space"];
 var counter = 0;
